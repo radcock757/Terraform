@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": [ "s3:*" ],
+        "Resource": [
+          "${aws_s3_bucket.web-store-s3.arn}",
+          "${aws_s3_bucketweb-store-s3.arn}/*"
+        ]
+      }
+    ]
+  }
